@@ -33,5 +33,10 @@ describe Solver do
       result = solver.fizzbuzz(value)
       expect(result).to eq "buzz"
   end
+  it 'the fizzbuzz method should return "fizzbuzz" if num is divisible by 3 and 5' do
+    value = 15
+    result = solver.fizzbuzz(value)
+    expect(result).to eq "fizzbuzz"
+end
 end
 end
