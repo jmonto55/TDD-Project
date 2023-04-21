@@ -1,7 +1,7 @@
 require_relative '../lib/solver'
 
 describe Solver do
-  context 'Should create a new Solver class and tests its methods' do
+  context 'Should create a new Solver class and test factorial method' do
     solver = Solver.new
     it 'Should test if factorial of 0 is 1' do
       expect(solver.factorial(0)).to eq 1
@@ -11,6 +11,13 @@ describe Solver do
     end
     it '' do
       expect(solver.factorial(5)).to eq 120
+    end
+  end
+
+  context 'Should create a new Solver class and test reverse method' do
+    solver = Solver.new
+    it 'Should test if reverse method works' do
+      expect(solver.reverse('hello')).to eq 'olleh'
     end
   end
 end
