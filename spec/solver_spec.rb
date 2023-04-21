@@ -23,10 +23,15 @@ describe Solver do
 
   context 'when solving the Solver class' do
     solver = Solver.new
-    it 'the fizzbuzz method shoult return "fizz" if num is divisible by 3' do
+    it 'the fizzbuzz method should return "fizz" if num is divisible by 3' do
         value = 9
         result = solver.fizzbuzz(value)
         expect(result).to eq "fizz"
     end
+    it 'the fizzbuzz method should return "buzz" if num is divisible by 5' do
+      value = 10
+      result = solver.fizzbuzz(value)
+      expect(result).to eq "buzz"
+  end
 end
 end
