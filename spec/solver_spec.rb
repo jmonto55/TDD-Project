@@ -38,5 +38,10 @@ describe Solver do
     result = solver.fizzbuzz(value)
     expect(result).to eq "fizzbuzz"
 end
+it 'the fizzbuzz method should return string num if num is not divisible either by 3 or 5' do
+  value = 7
+  result = solver.fizzbuzz(value)
+  expect(result).to eq "7"
+end
 end
 end
