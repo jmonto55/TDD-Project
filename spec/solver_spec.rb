@@ -13,4 +13,10 @@ describe Solver do
       expect(solver.factorial(5)).to eq 120
     end
   end
+  context 'Should create a new Solver class and test reverse method' do
+    solver = Solver.new
+    it 'Should test if reverse method works' do
+      expect(solver.reverse('hello')).to eq 'olleh'
+    end
+  end
 end
