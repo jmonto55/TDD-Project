@@ -1,8 +1,6 @@
 class Solver
   def factorial(num)
-    unless num.is_a?(Integer) && num >= 0
-        raise ArgumentError, "Factorial is undefined for negative integers"
-    end
+    raise ArgumentError, 'Factorial is undefined for negative integers' unless num.is_a?(Integer) && num >= 0
 
     return 1 if num.zero?
 
@@ -14,12 +12,10 @@ class Solver
   end
 
   def fizzbuzz(num)
-    return "fizzbuzz" if ((num % 3).zero? && (num % 5).zero?)
-    return "fizz" if (num % 3).zero?
-    return "buzz" if (num % 5).zero?
-    
-    num.to_s
+    return 'fizzbuzz' if (num % 3).zero? && (num % 5).zero?
+    return 'fizz' if (num % 3).zero?
+    return 'buzz' if (num % 5).zero?
 
-    
+    num.to_s
   end
 end
