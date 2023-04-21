@@ -9,5 +9,8 @@ describe Solver do
     it 'Should test if error rises when num is not integer or less than 0' do
       expect { solver.factorial(-10) }.to raise_error(ArgumentError, 'Factorial is undefined for negative integers')
     end
+    it 'Should test if factorial is working' do
+      expect(solver.factorial(5)).to eq 120
+    end
   end
 end
